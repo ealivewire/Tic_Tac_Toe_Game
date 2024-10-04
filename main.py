@@ -253,10 +253,10 @@ def play_game():
 
     except:  # An error has occurred.
         # Inform user:
-        pyautogui.alert(title='Error', text=f"Error (run_app): {traceback.format_exc()}")
+        pyautogui.alert(title='Error', text=f"Error (play_game): {traceback.format_exc()}")
 
         # Update system log with error details:
-        update_system_log("run_app", traceback.format_exc())
+        update_system_log("play_game", traceback.format_exc())
 
         # Exit the game:
         exit()
